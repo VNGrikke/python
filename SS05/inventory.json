@@ -1,0 +1,10 @@
+{
+    "products": [
+        {
+            "product_id": "0378c247-975a-43e5-9f43-22dca0ceb05f",
+            "name": "hello",
+            "quantity": 10,
+            "price": 10000.0
+        }
+    ]
+}
