@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_student_form_scores" model="ir.ui.view">
+        <field name="name">student.form.scores</field>
+        <field name="model">student.student</field>
+        <field name="inherit_id" ref="student_management.view_student_form"/>
+        <field name="arch" type="xml">
+            <group position="after">
+                <group string="Scores">
+                    <field name="score_math"/>
+                    <field name="score_english"/>
+                    <field name="score_average" readonly="1"/>
+                </group>
+                <footer>
+                    <button name="action_calculate_average"
+                            type="object"
+                            string="Calculate Average"
+                            class="btn-primary"/>
+                </footer>
+            </group>
+        </field>
+    </record>
+</odoo>
+
